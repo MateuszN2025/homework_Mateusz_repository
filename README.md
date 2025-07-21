@@ -14,7 +14,7 @@ folder.
 ## Test Descriptions
 - Mobile App testing: We want to verify all basic mathematical operations like addition, subtraction,
 division and multiplication
-- Mock API testing: We want to verify HTTPS methods like GET, POST. Endpoint: /users, /users/id
+- Mock API testing: We want to verify HTTPS methods like GET, POST (endpoint: /users, /users/id).
 
 ## Environment Details
 - Python version: 3.9
