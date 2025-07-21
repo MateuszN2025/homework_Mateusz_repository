@@ -8,7 +8,7 @@
 ## Instructions for running individual tests or all tests collectively:
 - Mobile App testing: You need to run Android Studio and Phone emulator first. Then You can use
 'pytest' to run whole test file or each test individually in a test file.
-- Mock API testing: You can run test individually using 'pytest' or bash scripts (WSL) in 'Task_3_Gherkin_Scenario_Creation' 
+- Mock API testing: You can run test individually using 'pytest' or bash scripts (WSL) in 'Task_4_Automation_Test_Runner_Script' 
 folder.
 
 ## Test Descriptions
