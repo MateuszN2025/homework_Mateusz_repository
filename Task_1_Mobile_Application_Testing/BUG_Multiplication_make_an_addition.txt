@@ -1,0 +1,28 @@
+Summary: Multiplication make an addition instead
+
+Description:
+Step1.=============INPUTS======================
+a = 60
+b = 15
+Step2.=============ADD======================
+Expected result = 75.0
+Observed result = 75.0
+Step3.=============SUBTRACTION======================
+Expected result = 45.0
+Observed result = 45.0
+Step4.=============DIVISION======================
+Expected result = 4.0
+Observed result = 4.0
+Step5.=============MULTIPLICATION======================
+Expected result = 900.0 
+Observed result = 75.0 NOK !!!
+
+Severity: Severe/Critical (3 out of 4 operations works)
+
+Priority: High/Highest
+
+FixVersion: relese_number_v_1.2
+
+AffectedVersion: relese_number_v_1.1
+
+Logs: local_ui_dump_logs.xml
