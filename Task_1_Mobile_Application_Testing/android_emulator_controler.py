@@ -85,7 +85,7 @@ class AndroidEmulatorControler:
             # #########################################
             #  Clearing input fields
             # #########################################
-            self.clearing_inputs(iterations=15)
+            self.clearing_inputs(iterations=20)
 
             # #########################################
             # Injecting number for calculations
@@ -111,8 +111,12 @@ class AndroidEmulatorControler:
                 expected_result = float(number_1) - float(number_2)
                 button_coordinates = {"x_coor": "500", "y_coor": "600"}
             elif operation == "/":
-                expected_result = float(number_1) / float(number_2)
-                button_coordinates = {"x_coor": "500", "y_coor": "700"}
+                try:
+                    expected_result = float(number_1) / float(number_2)
+                except ZeroDivisionError:
+                    print("ZeroDivisionError")
+                finally:
+                    button_coordinates = {"x_coor": "500", "y_coor": "700"}
             elif operation == "*":
                 expected_result = float(number_1) * float(number_2)
                 button_coordinates = {"x_coor": "500", "y_coor": "900"}
