@@ -26,10 +26,11 @@ to run whole test file or bash scripts (WSL environment) in 'Task_4_Automation_T
 - First You need to run/execute 'mock_api.py'
 #### Running individual tests:
 - In 'Task_2_API_Testing' folder You can use e.g.:
-'python3 mock_api.py & PYTHON_PID=$! ;  pytest test_mock_api.py::test_2_post_test' 
+'python3 mock_api.py & PYTHON_PID=$! ; pytest test_mock_api.py::test_2_post_test; kill $PYTHON_PID' 
 in CLI to run only one test.
 #### Running all tests collectively
-In 'Task_2_API_Testing' folder You can use: 'pytest test_mock_api.py' in CLI
+In 'Task_2_API_Testing' folder You can use:
+'python3 mock_api.py & PYTHON_PID=$! ; pytest test_mock_api.py; kill $PYTHON_PID' in CLI
 to run whole test file or bash scripts: 'run_mock_api_tests.sh' or 'run_gherkin_behave_tests.sh'
 (WSL environment) in 'Task_4_Automation_Test_Runner_Script' folder.
 
