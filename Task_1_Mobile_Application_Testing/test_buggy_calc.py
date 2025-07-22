@@ -16,7 +16,7 @@ def verify_connetion():
 
 @pytest.mark.parametrize("a, b, expected", [(10, 20, 30), (121, 213, 334), (12.31, 12.33, 24.64)])
 def test_1_buggy_calc_addition(a, b, expected, verify_connetion):
-        print("=============str(a)DD======================")
+        print("=============ADDITION======================")
         emu.execute_mathematical_operation(number_1=str(a), operation="+", number_2=str(b))
 
 @pytest.mark.parametrize("a, b, expected", [(50, 25, 25), (1, 2, -1), (10000.1, 1.2, 998.9)])
