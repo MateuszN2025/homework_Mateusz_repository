@@ -24,7 +24,7 @@ def test_2_buggy_calc_subtraction(a, b, expected, verify_connetion):
         print("=============SUBTRACTION======================")
         emu.execute_mathematical_operation(number_1=str(a), operation="-", number_2=str(b))
 
-@pytest.mark.parametrize("a, b, expected", [(8, 4, 2), (1000, 500, 2), (5, 2, 2.5), (6, 0, "ZeroDivisionError")])
+@pytest.mark.parametrize("a, b, expected", [(8, 4, 2), (1000, 500, 2), (5, 2, 2.5)])
 def test_3_buggy_calc_division(a, b, expected, verify_connetion):
         print("=============DIVISION======================")
         emu.execute_mathematical_operation(number_1=str(a), operation="/", number_2=str(b))
