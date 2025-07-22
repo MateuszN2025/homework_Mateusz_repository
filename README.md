@@ -19,7 +19,7 @@
 ***pytest test_buggy_calc.py::test_3_buggy_calc_division*** in CLI to run only one test.
 #### Running all tests collectively
 - In 'Task_1_Mobile_Application_Testing' folder You can use: ***pytest test_buggy_calc.py*** in CLI
-to run whole test file or bash scripts (WSL environment) in 'Task_4_Automation_Test_Runner_Script' folder.
+to run whole test file.
 
 ### Mock API testing
 #### Setup
